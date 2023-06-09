@@ -7,4 +7,7 @@ RUN wget https://downloadarchive.documentfoundation.org/libreoffice/old/7.0.0.2/
 
 RUN tar -xvf LibreOffice_7.0.0.2_Linux_x86-64_deb.tar.gz \
  && cd LibreOffice_7.0.0.2_Linux_x86-64_deb/DEBS \
- && yum localinstall *.deb --skip-broken \
+ && yum localinstall *.deb --skip-broken
+
+RUN rm -rf LibreOffice_7.0.0.2_Linux_x86-64_deb.tar.gz && rm -rf LibreOffice_7.0.0.2_Linux_x86-64_deb
+
