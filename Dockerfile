@@ -1,4 +1,4 @@
-FROM skchawala/docker-node-canvas-deps
+FROM skchawala/docker-node-canvas-deps:16.15.1-slim
 
 RUN apt-get update && apt-get install -qq wget yum
 
